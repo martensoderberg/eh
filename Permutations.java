@@ -6,6 +6,7 @@ public class Permutations {
   public static List<String> permutations(String str) {
     List<String> result = new ArrayList<String>();
     if (str.length() == 0) {
+      result.add("");
       return result;
     }
 
@@ -28,7 +29,7 @@ public class Permutations {
   }
 
   public static void main(String... args) {
-    List<String> permutations = permutations("hello");
+    List<String> permutations = permutations("abc");
     for (String p : permutations) {
       System.out.println(p);
     }
